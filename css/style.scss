@@ -1,0 +1,254 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.buttons{
+    font: 1em sans-serif;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 80px;
+    border: 1px transparent solid;
+    background-color: rgb(76, 212, 212);
+    color: white;
+}
+
+body{
+    
+    //header
+    header{
+        
+        width: 100%;
+        background-image: url("/images/image-hero-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 300px;
+        height: 20%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        padding: 3em 2em;
+
+        img{
+            display: none;
+            width: 2em;
+            height: 1.3em;
+        }
+
+
+        .nav-links-desktop{
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            
+            a{
+                font-size: 0.9rem;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        #nav-links-mobile{
+            position: absolute;
+            
+            display: none;
+            width: 70%;
+            height: fit-content;
+            z-index: 9999;
+            
+            flex-direction: column;
+            
+            background-color: white;
+            right: auto;
+            left: auto;
+            margin: 40px 15%;
+            padding: 0px;
+            border-radius: 10px;
+            align-items: floor;
+            justify-content: space-between;
+
+            a{
+                color: grey;
+                padding: 1.5em auto;
+                margin: 1em auto;
+                border-bottom: 1px grey solid ;
+                
+            }
+        }
+
+
+
+    }
+}
+
+//body
+#body-cont{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: -5%;
+    background-color: white;
+    border: 1px transparent solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+        width: 100%;
+        
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+        padding: 0.5em;
+        justify-content: space-evenly;
+        
+        align-items: center;
+        border: 1px rgb(240, 230, 213) solid;
+        border-radius: 10px;
+
+        h2{
+            padding: 1em;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+            
+        }
+        p{
+            
+            font-weight: 200;
+            font-size: 0.9em;
+            padding: 0.3em;
+            
+            color: rgb(141, 140, 140);
+
+        }
+
+    }
+
+    
+
+    #cont1{
+
+        
+        img{
+            
+            padding-top: 0;
+            margin-top: -12%;
+            width: 20%;
+        }
+
+        #cont1-buttons{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                
+                width: 15%;
+                margin: 0;
+            }
+        }
+    }
+
+    #cont2{
+        #bar{
+            border: 1px transparent solid;
+            width: 80%;
+            margin: 1em auto;
+            height: 0.6em;
+            border-radius: 20px;
+            background-image: linear-gradient(to right,rgb(48, 170, 201), wheat,wheat);
+
+
+        }
+    }
+
+    #cont3{
+        
+        .sub-cont{
+            border: 1px rgb(228, 208, 208) solid;
+            border-radius: 10px;
+            margin: 1em 0.5em;
+            padding: 0.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-top: 10px;
+            
+            h3{
+                padding: 0.5em;
+                font-size: 18px;
+
+            }
+            #pledge{
+                color: blue;
+                font-weight: 300;
+                font-size: 15px;
+            }
+            p{
+                font-size: .8em;
+            }
+
+            .offer{
+                display: flex;
+                padding: 0.5em;
+                width: 50%;
+
+                color: grey;
+                justify-items: flex-start;
+                align-items: center;
+
+                font-weight: normal;
+                #amount{
+                    color: black;
+                    margin-right: 0.3em;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+                
+            }
+
+            .buttons{
+                width: 60%;
+            }
+        }
+    }
+
+}
+
+
+
+
+//media queries
+@media (max-width:600px) {
+    body{
+        header{
+            .nav-links-desktop{
+                display: none;
+            }
+            img{
+                display: inline;
+                
+            }
+            
+
+        }
+    }
+    
+}
